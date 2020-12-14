@@ -206,39 +206,63 @@
 
 /* Weekdays (mon - sun) */
 #calendar-full .weekdays {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
     margin: 0;
     padding: 10px 0;
     background-color: #ddd;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
-#calendar-full .weekdays li {
-    display: inline-block;
-    width: 13.6%;
+#calendar-full .weekdays .weekday {
     color: #666;
     text-align: center;
 }
 
 /* Days (1 - 31) */
 #calendar-full .days {
-    padding: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-column-gap: 1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background: #eee;
-    margin: 0;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-#calendar-full .days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
+#calendar-full .days .day {
     text-align: center;
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 13px;
     color: #777;
+    max-width: 150px;
+    /* padding: 10px; */
 }
 
-#calendar-full .days li .active {
-    padding: 5px;
-    background: #1abc9c;
-    color: white !important;
+#calendar-full .days .empty {
+    position: relative;
+    padding: 10px
+}
+
+#calendar-full .days .empty span {
+    position:absolute;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+#calendar-full .days .full {
+    /* padding-left: 5em; */
+    /* padding-right: 5em; */
+    border: 2px solid black;
+}
+
+#calendar-full .days .day .event-snapshot {
+    border: 1px solid black;
 }
 
 
