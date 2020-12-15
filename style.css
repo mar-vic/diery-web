@@ -5,26 +5,40 @@
 }
 
 #page-title {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     font-size: 40px;
     border: 2px solid black;
     margin-bottom: 30px;
 }
 
+/* Styles for the main menu */
 #main-menu {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-column-gap: 2em;
     margin-bottom: 30px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 2px solid black;
-    margin-bottom: 30px;
 }
 
 .menu-item {
     margin: auto;
 }
+
+/* .menu-item a:link, .menu-item footer a:visited { */
+/*     text-align: center; */
+/*     text-decoration: none; */
+/*     display: inline-block; */
+/*     color: black; */
+/* } */
+
+/* .menu-item a:hover, a:active { */
+/*     background-color: black; */
+/*     color: white; */
+/* } */
 
 #marquee {
     height: 40px;
@@ -228,6 +242,7 @@
     display: grid;
     grid-template-columns: repeat(7, 14.28%);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
     background: #eee;
@@ -313,5 +328,136 @@
     /* padding: 5px; */
 }
 
+/* Styling the article */
+.article-detail {
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
 
+.article-detail header {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 65% 10%;
+    padding: 20px;
+}
 
+.article-detail section {
+    padding: 20px;
+}
+
+/* Style for festivals page */
+/* Masonry layout for featured articles */
+#festivals {
+    column-count: 2;
+    column-gap: 1em;
+    margin-bottom: 30px;
+}
+
+/* Style for individual featured articles */
+.festival-preview {
+    display: inline-block;
+    margin: 0 0 1em;
+    border: 2px solid black;
+    /* padding: 20px; */
+}
+
+.festival-preview footer {
+    background: black;
+    color: white;
+}
+
+.festival-preview header {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.festival-preview footer {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.festival-preview footer a:link, .festival-preview footer a:visited {
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.festival-preview footer a:hover, a:active {
+    background-color: white;
+    color: black;
+}
+
+.festival-preview .text {
+    padding: 20px;
+}
+
+.festival-preview .media {
+    padding: 20px
+}
+
+/* Styles for galleries */
+#albums {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 20px;
+}
+
+.album {
+    text-align: center;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+}
+
+.album:link, .album:visited {
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+
+.album:hover, .album:active {
+    background-color: white;
+    color: black;
+}
+
+/* Style for about page */
+#about {
+    border: 2px solid black;
+    margin-bottom: 30px;
+}
+
+#about p, #about h2, #about h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#about footer {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+#about footer a:link, #about footer a:visited {
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+#about footer a:hover, a:active {
+    background-color: white;
+    color: black;
+}
