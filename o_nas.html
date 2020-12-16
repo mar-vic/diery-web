@@ -3,6 +3,7 @@
     <head>
         <title>KC Diera do Sveta</title>
         <link href="style.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     </head>
     <body>
         <header id="page-title" class="center">Diera do Sveta</header>
@@ -20,6 +21,35 @@
                 <h2>O nás</h2>
             </header>
             <section class="media">
+                <div style="background-color:black;margin-left:20px;margin-right:20px;margin-bottom:30px;">
+                    <img class="slides" style="height:500px;margin-left:auto;margin-right:auto;display:block;" src="./images/galleries/people/1.jpg">
+                    <img class="slides" style="height:500px;margin-left:auto;margin-right:auto;display:block;" src="./images/galleries/people/2.jpg">
+                    <img class="slides" style="height:500px;margin-left:auto;margin-right:auto;display:block;" src="./images/galleries/people/3.jpg">
+                    <img class="slides" style="height:500px;margin-left:auto;margin-right:auto;display:block;" src="./images/galleries/people/4.jpg">
+                    <img class="slides" style="height:500px;margin-left:auto;margin-right:auto;display:block;" src="./images/galleries/people/5.jpg">
+                    <img class="slides" style="height:500px;margin-left:auto;margin-right:auto;display:block;" src="./images/galleries/people/6.jpg">
+                    <img class="slides" style="height:500px;margin-left:auto;margin-right:auto;display:block;" src="./images/galleries/people/7.jpg">
+                    <img class="slides" style="height:500px;margin-left:auto;margin-right:auto;display:block;" src="./images/galleries/people/8.jpg">
+                    <img class="slides" style="height:500px;margin-left:auto;margin-right:auto;display:block;" src="./images/galleries/people/9.jpg">
+                </div>
+
+                <script>
+                 var myIndex = 0;
+                 carousel();
+
+                 function carousel() {
+                     var i;
+                     var x = document.getElementsByClassName("slides");
+                     for (i = 0; i < x.length; i++) {
+                         x[i].style.display = "none";
+                     }
+                     myIndex++;
+                     if (myIndex > x.length) {myIndex = 1}
+                     x[myIndex-1].style.display = "block";
+                     setTimeout(carousel, 3000); // Change image every 2 seconds
+                 }
+                </script>
+
             </section>
             <section class="text">
                 <p>
